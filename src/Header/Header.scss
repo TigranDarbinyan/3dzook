@@ -7,7 +7,7 @@
   height: 8vh;
   color: white;
   background: black;
-  font-size: 2.4vh;
+  font-size: 14px;
 
   .header-container {
     display: flex;
@@ -15,7 +15,7 @@
     align-items: center;
     width: 80%;
 
-    @media screen and (max-width: $tablet) {
+    @media screen and (max-width: $mobile) {
        width: 95%;
     }
 
@@ -58,7 +58,7 @@
     .about-button {
       color: white;
       text-decoration: none;
-      margin-right: 20px;
+      margin-right: 18px;
       margin-bottom: 2px;
     }
   }
