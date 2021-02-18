@@ -1,16 +1,16 @@
-import './About.scss'
+import './Media.scss'
 import React from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 
-function About() {
-  return <div className="about">
+function Media() {
+  return <div className="media">
     <Header/>
-    <div className='about-container'>
-      ABOUT
+    <div className='media-container'>
+      MEDIA
     </div>
     <Footer/>
   </div>
 }
 
-export default About;
+export default Media;

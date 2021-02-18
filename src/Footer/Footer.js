@@ -1,6 +1,5 @@
 import './Footer.scss'
 import React from "react"
-import About from "../About/About"
 import {Link} from "react-router-dom"
 
 function Footer() {
@@ -10,10 +9,10 @@ function Footer() {
     <div className='footer-container'>
       <div className='links'>
         <div className='menu'>
-          <Link className='about-button' to={About}>About Us</Link>
-          <Link className='media-button' to={About}>Media</Link>
-          <Link className='policy-button' to={About}>Privacy Policy</Link>
-          <Link className='contacts-button' to={About}>Contact Us</Link>
+          <Link className='about-button' to='/about'>About Us</Link>
+          <Link className='media-button' to='/media'>Media</Link>
+          <Link className='policy-button' to='/policy'>Privacy Policy</Link>
+          <Link className='contacts-button' to='/contacts'>Contact Us</Link>
         </div>
         <div className='social-icons'>
           <a href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>

@@ -1,7 +1,6 @@
 import './Header.scss'
 import React from "react"
 import {Link} from "react-router-dom"
-import About from "../About/About"
 
 function Header() {
   const baseURL = process.env.PUBLIC_URL + './assets/header/';
@@ -13,7 +12,7 @@ function Header() {
         <div className='arrow-down'/>
       </div>
       <div className='menu'>
-        <Link className='about-button' to={About}>About Us</Link>
+        <Link className='about-button' to='/about'>About Us</Link>
         <a href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>
           <img src={baseURL + 'instagram.svg'} alt=''/>
         </a>

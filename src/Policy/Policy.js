@@ -1,16 +1,16 @@
-import './About.scss'
+import './Policy.scss'
 import React from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 
-function About() {
-  return <div className="about">
+function Policy() {
+  return <div className="policy">
     <Header/>
-    <div className='about-container'>
-      ABOUT
+    <div className='policy-container'>
+      POLICY
     </div>
     <Footer/>
   </div>
 }
 
-export default About;
+export default Policy;
