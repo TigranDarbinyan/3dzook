@@ -9,10 +9,20 @@
 
   .policy-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     width: 80%;
     color: black;
+    margin-top: 15px;
+    margin-bottom: 25vh;
+    cursor: default;
 
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+    .content {
+      font-size: 13px;
+    }
   }
 }

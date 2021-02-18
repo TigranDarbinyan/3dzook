@@ -16,13 +16,13 @@ function Footer() {
         </div>
         <div className='social-icons'>
           <a href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>
-            <img src={baseURL + 'header/instagram.svg'} alt=''/>
+            <img src={baseURL + 'svg/instagram.svg'} alt=''/>
           </a>
           <a href='https://www.fb.com/3dzookgifts' target='_blank' rel='noreferrer'>
-            <img src={baseURL + 'header/fb.svg'} alt=''/>
+            <img src={baseURL + 'svg/fb.svg'} alt=''/>
           </a>
           <a href='https://www.tiktok.com/@dzook' target='_blank' rel='noreferrer'>
-            <img src={baseURL + 'header/tiktok.svg'} alt=''/>
+            <img src={baseURL + 'svg/tiktok.svg'} alt=''/>
           </a>
         </div>
       </div>

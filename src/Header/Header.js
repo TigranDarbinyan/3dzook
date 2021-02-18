@@ -3,12 +3,14 @@ import React from "react"
 import {Link} from "react-router-dom"
 
 function Header() {
-  const baseURL = process.env.PUBLIC_URL + './assets/header/';
+  const baseURL = process.env.PUBLIC_URL + './assets/svg/';
 
   return <div className="header">
     <div className="header-container">
       <div className="logo">
-        <img src={baseURL + 'logo.svg'} alt=''/>
+        <Link to='/'>
+          <img src={baseURL + 'logo.svg'} alt=''/>
+        </Link>
         <div className='arrow-down'/>
       </div>
       <div className='menu'>
