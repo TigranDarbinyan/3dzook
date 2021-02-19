@@ -28,13 +28,57 @@
       flex-wrap: wrap;
 
       .media-item {
-        flex: 0 1 46%;
-        margin-bottom: 2%;
-        margin-right: 2%;
-        height: 150px;
+        width: 45%;
+        margin: 1.5%;
+        display: flex;
+        flex-direction: column;
+        height: 140px;
         background: #FFFFFF;
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
+
+        .media-item-content-container {
+          display: flex;
+          width: 100%;
+          padding: 15px;
+          flex-direction: column;
+
+          .media-item-header {
+            width: 93%;
+            height: 30px;
+
+            .day {
+              float: right;
+              color: #616161;
+              font-size: 12px;
+            }
+
+            img {
+             height: 18px;
+              float: left;
+            }
+          }
+
+          .media-item-content {
+
+            p {
+              width: 85%;
+            }
+          }
+        }
+      }
+    }
+
+    .partners {
+      width: 98%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 4%;
+
+      img {
+        width: 30%;
+        margin-top: 15px;
+        margin-bottom: 15px;
       }
     }
   }
