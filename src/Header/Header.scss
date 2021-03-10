@@ -49,6 +49,13 @@
         margin-right: 8px;
         cursor: pointer;
       }
+
+      .social-icons {
+
+        @media screen and (max-width: $mobile) {
+          display: none;
+        }
+      }
     }
 
     img {

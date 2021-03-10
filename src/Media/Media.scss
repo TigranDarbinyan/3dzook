@@ -1,3 +1,5 @@
+@import "./src/Styles/variables";
+
 .media {
   display: flex;
   flex-direction: column;
@@ -13,7 +15,6 @@
     width: 80%;
     color: black;
     margin-top: 15px;
-    margin-bottom: 25vh;
     cursor: default;
 
     .title {
@@ -37,6 +38,10 @@
         box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.15);
         border-radius: 10px;
 
+        @media screen and (max-width: $tablet) {
+          width: 90%;
+        }
+
         .media-item-content-container {
           display: flex;
           width: 100%;
@@ -44,8 +49,10 @@
           flex-direction: column;
 
           .media-item-header {
-            width: 93%;
+            width: 90%;
             height: 30px;
+            display: flex;
+            justify-content: space-between;
 
             .day {
               float: right;

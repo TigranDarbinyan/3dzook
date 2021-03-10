@@ -2,6 +2,7 @@ import './Home.scss'
 import React from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
+import Gallery from "./Gallery/Gallery"
 
 function Home() {
   const baseURL = process.env.PUBLIC_URL + '/assets/';
@@ -37,6 +38,7 @@ function Home() {
         {getAboutBlock()}
         {getMobileAppsBlock()}
       </div>
+      <Gallery/>
     </div>
     <Footer/>
   </div>
