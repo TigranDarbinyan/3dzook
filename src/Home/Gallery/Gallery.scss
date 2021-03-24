@@ -1,11 +1,75 @@
 .gallery {
   margin-top: 15px;
   padding-bottom: 20px;
+  position: relative;
+
+  video {
+    position: relative;
+    z-index: 0;
+  }
 
   .result-pop-up {
-    width: 500px;
-    height: 300px;
-    position: absolute;
-    background-color: #B3B3B3;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    z-index: 1;
+    animation: fadeIn 0.3s linear;
+
+    .result-container {
+      display: flex;
+      width: 65%;
+      max-height: 90%;
+      background-color: white;
+      position: relative;
+
+      .close {
+        width: 20px;
+        height: 20px;
+        color: #424242;
+        font-size: 30px;
+        top: 5px;
+        right: 15px;
+        position: absolute;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 0.8;
+        }
+      }
+
+      .result {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 40px;
+        margin-bottom: 40px;
+
+        img {
+          margin: 25px;
+          max-width: 90%;
+        }
+      }
+    }
+  }
+
+  img {
+    cursor: pointer;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity:0
+    }
+    100% {
+      opacity:1;
+    }
   }
 }
