@@ -5,6 +5,7 @@ import About from "./About/About"
 import Media from "./Media/Media"
 import Policy from "./Policy/Policy"
 import Contacts from "./Contacts/Contacts"
+import TermsOfUse from "./TermsOfUse/TermsOfUse"
 
 function App() {
   return <Router>
@@ -15,6 +16,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About/>
+        </Route>
+        <Route path="/terms-of-use">
+          <TermsOfUse/>
         </Route>
         <Route path="/media">
           <Media/>

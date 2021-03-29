@@ -13,10 +13,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 960px;
 
-    @media screen and (max-width: $mobile) {
-       width: 95%;
+    @media screen and (max-width: $small-screen) {
+      width: 90%;
+    }
+
+    @media screen and (max-width: $tablet) {
+      width: 90%;
     }
 
     .logo {
@@ -37,6 +41,7 @@
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
         border-top: 10px solid #000000;
+        z-index: 4;
       }
     }
 
