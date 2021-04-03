@@ -6,7 +6,7 @@ function Gallery() {
   const [selectedURL, setSelectedURL] = useState(null);
   const baseURL = process.env.PUBLIC_URL + '/assets/gallery/';
   const itemsCount = 54;
-  const videoIndexes = [11, 15, 19, 26, 35, 42, 49];
+  const videoIndexes = [5, 11, 15, 19, 26];
 
   const showResult = () => {
     if (selectedURL === null) {
