@@ -1,6 +1,7 @@
+@import "./src/Styles/variables";
+
 .gallery {
   margin-top: 15px;
-  padding-bottom: 20px;
   position: relative;
 
   video {
@@ -20,15 +21,21 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    z-index: 1;
+    z-index: 3;
     animation: fadeIn 0.3s linear;
+
+    @media screen and (max-width: $mobile) {
+      display: none;
+    }
 
     .result-container {
       display: flex;
-      width: 65%;
+      justify-content: center;
+      min-width: 45%;
       max-height: 90%;
       background-color: white;
       position: relative;
+      box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.15);
 
       .close {
         width: 20px;
@@ -48,14 +55,26 @@
       .result {
         display: flex;
         justify-content: center;
-        width: 100%;
-        margin-top: 40px;
-        margin-bottom: 40px;
+        margin: 55px 30px;
+        position: relative;
 
         img {
-          margin: 25px;
-          max-width: 90%;
+          height: fit-content;
+          max-height: 99%;
         }
+      }
+
+      .user-info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        position: absolute;
+        color: black;
+        bottom: -30px;
+        -webkit-user-select: none;
+        user-select: none;
+        margin-top: 2px;
+        font-weight: 600;
       }
     }
   }

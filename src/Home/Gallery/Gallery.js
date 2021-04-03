@@ -7,17 +7,25 @@ function Gallery() {
   const baseURL = process.env.PUBLIC_URL + '/assets/gallery/';
   const itemsCount = 54;
   const videoIndexes = [5, 11, 15, 19, 26];
+  const userNames = ['eliza_m', '@natan_yu', '@alex_Li', '@john_ju', '@agatha_na', '@sam_Ik', '@mark_ju', '@sash_fb', '@Rainbow_ji', '@Lil_br', '@flower_ey', '@elo_mi', '@nar_qr', '@splash_nu', '@kirk_st', '@dofha_ds', '@evan_re', '@dor_mk', '@kar_yu', '@choi_ar', '@charlie_dp', '@paige_vc', '@ryan_mo', '@irigy_on', '@erin_xe', '@carie_an', '@cher_zw', '@jay_jy', '@kim_al', '@mattew_ho', '@conan_wq', '@daniel_by', '@allison_dt', '@kanw_cz', '@george_ol', '@fireman_re', '@robin_kj', '@sole_sd', '@phil_js'];
+  const styleNames = ['Anime Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Arty Style', 'Anime Style', 'Group Glam', 'Glam Style', 'Glam Style', 'Anime Style', 'Glam Style', 'ToonMe Style', 'Group Glam', 'Anime Style', 'Glam Style', 'Group Glam', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style', 'Glam Style'];
 
   const showResult = () => {
     if (selectedURL === null) {
       return null;
     }
 
+    const nameIndex = parseInt(selectedURL.match(/\d+/g)[0]) - 1;
+
     return <div className='result-pop-up'>
       <div className='result-container'>
         <div className='close' onClick={() => setSelectedURL(null)}>&times;</div>
         <div className='result'>
           <img src={selectedURL} alt=''/>
+          <div className='user-info'>
+            <div className='user-name'>{userNames[nameIndex]}</div>
+            <div className='style-name'>{styleNames[nameIndex]}</div>
+          </div>
         </div>
       </div>
     </div>

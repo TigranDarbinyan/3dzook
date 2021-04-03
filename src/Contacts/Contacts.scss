@@ -1,3 +1,5 @@
+@import "./src/Styles/variables";
+
 .contacts {
   display: flex;
   flex-direction: column;
@@ -24,8 +26,12 @@
 
     .contacts-about {
       max-width: 320px;
-      margin-top: 15px;
+      margin-top: 25px;
       width: 70%;
+
+      @media screen and (max-width: $mobile) {
+        width: 80%;
+      }
     }
 
     .contacts-form-container {
@@ -36,6 +42,10 @@
         display: flex;
         width: 60%;
         flex-direction: column;
+
+        @media screen and (max-width: $mobile) {
+          width: 80%;
+        }
 
         .user-name, .user-email {
           width: 100%;
