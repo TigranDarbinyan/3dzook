@@ -10,7 +10,7 @@ function Home() {
   const getAboutBlock = () => {
     return <div className='about-3dzook'>
       <p>Create artistic <br/> version of yourself!</p>
-      One click artworks
+      <div className='one-click'>One click artworks</div>
       <img className='heart' src={baseURL + 'images/heart.png'} alt=''/>
       <img className='arrow' src={baseURL + 'images/arrow.png'} alt=''/>
     </div>

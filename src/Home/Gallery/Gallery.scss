@@ -32,7 +32,7 @@
       display: flex;
       justify-content: center;
       min-width: 45%;
-      max-height: 90%;
+      width: 864px;
       background-color: white;
       position: relative;
       box-shadow: 0 0 6px 2px rgba(0, 0, 0, 0.15);
@@ -55,19 +55,21 @@
       .result {
         display: flex;
         justify-content: center;
-        margin: 55px 30px;
+        margin-top: 84px;
+        margin-bottom: 124px;
         position: relative;
 
         img {
-          height: fit-content;
-          max-height: 99%;
+          width: 609px;
+          margin-right: 124px;
+          margin-left: 124px;
         }
       }
 
       .user-info {
         display: flex;
         justify-content: space-between;
-        width: 100%;
+        width: 609px;
         position: absolute;
         color: black;
         bottom: -30px;
@@ -81,6 +83,11 @@
 
   img {
     cursor: pointer;
+    border-radius: 5px;
+  }
+
+  video {
+    border-radius: 5px;
   }
 
   @keyframes fadeIn {

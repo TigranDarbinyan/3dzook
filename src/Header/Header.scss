@@ -4,7 +4,7 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 8vh;
+  height: 78px;
   color: white;
   background: black;
   font-size: 14px;
@@ -68,16 +68,21 @@
       display: flex;
       height: 100%;
       position: relative;
+      margin-left: 58px;
+
+      .logo-image {
+
+      }
 
       a {
-        margin-top: 2vh;
+        margin-top: 24px;
       }
 
       .arrow-down {
         width: 0;
         height: 0;
         right: 0;
-        bottom: -8px;
+        bottom: 1px;
         position: absolute;
         border-left: 10px solid transparent;
         border-right: 10px solid transparent;
@@ -90,6 +95,7 @@
       display: flex;
       align-items: center;
       height: 100%;
+      margin-top: -8px;
 
       .burger-menu, .close-burger-menu {
         display: none;
@@ -100,7 +106,7 @@
       }
 
       img {
-        margin-right: 8px;
+        margin-right: 15px;
         cursor: pointer;
       }
 
@@ -127,7 +133,7 @@
     .about-button {
       color: white;
       text-decoration: none;
-      margin-right: 18px;
+      margin-right: 30px;
       margin-bottom: 2px;
 
       @media screen and (max-width: $mobile) {

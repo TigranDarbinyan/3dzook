@@ -45,7 +45,7 @@ function Header() {
     <div className="header-container">
       <div className="logo">
         <Link to='/'>
-          <img src={baseURL + 'logo.svg'} alt=''/>
+          <img className='logo-image' src={baseURL + 'logo.svg'} alt=''/>
         </Link>
         <div className='arrow-down'/>
       </div>
