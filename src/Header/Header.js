@@ -23,11 +23,14 @@ function Header() {
         <a href='https://www.facebook.com/dzookapp' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/fb.svg'} alt=''/>
         </a>
-        <a href='https://www.linkedin.com/company/3-dzook/' target='_blank' rel='noreferrer'>
+        <a href='https://twitter.com/3_dzook' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/twitter.svg'} alt=''/>
         </a>
-        <a href='https://twitter.com/3_dzook' target='_blank' rel='noreferrer'>
+        <a href='https://www.linkedin.com/company/3-dzook/' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/linkedin.svg'} alt=''/>
+        </a>
+        <a href='https://www.youtube.com/channel/UCQzecEFTE6N4F34IoNIHd0w' target='_blank' rel='noreferrer'>
+          <img src={baseURL + '/youtube.svg'} alt=''/>
         </a>
       </div>
     </div> : null;
@@ -56,7 +59,7 @@ function Header() {
           <a href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'instagram.svg'} alt=''/>
           </a>
-          <a href='https://www.fb.com/3dzookgifts' target='_blank' rel='noreferrer'>
+          <a href='https://www.fb.com/dzookapp' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'fb.svg'} alt=''/>
           </a>
           <a href='https://www.tiktok.com/@dzook' target='_blank' rel='noreferrer'>

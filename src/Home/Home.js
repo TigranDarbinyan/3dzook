@@ -20,10 +20,11 @@ function Home() {
     return <div className='mobile-apps'>
       <div className='mobile-apps-container'>
         <a href='https://apps.apple.com/us/app/dzook-animation-avatar-maker/id1508330098' target='_blank'
-           rel='noreferrer'>
+           rel='noreferrer' id='ios-app-header'>
           <img src={baseURL + 'images/ios.png'} alt=''/>
         </a>
-        <a href='https://play.google.com/store/apps/details?id=ai.dzook.android' target='_blank' rel='noreferrer'>
+        <a href='https://play.google.com/store/apps/details?id=ai.dzook.android' target='_blank'
+           rel='noreferrer' id='android-app-header'>
           <img src={baseURL + 'images/android.png'} alt=''/>
         </a>
       </div>

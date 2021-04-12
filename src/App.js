@@ -8,6 +8,8 @@ import Contacts from "./Contacts/Contacts"
 import TermsOfUse from "./TermsOfUse/TermsOfUse"
 
 function App() {
+  console.log('V 1.0');
+
   return <Router>
     <div className='app'>
       <Switch>

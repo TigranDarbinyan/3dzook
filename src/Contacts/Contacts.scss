@@ -36,6 +36,7 @@
 
     .contacts-form-container {
       display: flex;
+      flex-direction: column;
       margin-top: 20px;
 
       .contact-form {
@@ -94,6 +95,27 @@
             background-color: #1c1c1c;
           }
         }
+      }
+
+      .response-text {
+        font-size: 13px;
+        margin-top: 5px;
+        font-weight: bold;
+        color: green;
+        animation: fadeIn 0.4s linear;
+
+        &.error {
+          color: #ff2323;
+        }
+      }
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity:0
+      }
+      100% {
+        opacity:1;
       }
     }
   }

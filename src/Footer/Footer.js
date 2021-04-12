@@ -33,14 +33,17 @@ function Footer() {
           <a href='https://twitter.com/3_dzook' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'svg/linkedin.svg'} alt=''/>
           </a>
+          <a href='https://www.youtube.com/channel/UCQzecEFTE6N4F34IoNIHd0w' target='_blank' rel='noreferrer'>
+            <img src={baseURL + 'svg/youtube.svg'} alt=''/>
+          </a>
         </div>
       </div>
       <div className='mobile-apps'>
         <a href='https://apps.apple.com/us/app/dzook-animation-avatar-maker/id1508330098' target='_blank' rel='noreferrer'>
-          <img src={baseURL + 'images/ios.png'} alt=''/>
+          <img src={baseURL + 'images/ios.png'} alt='' id='ios-app-footer'/>
         </a>
         <a href='https://play.google.com/store/apps/details?id=ai.dzook.android' target='_blank' rel='noreferrer'>
-          <img src={baseURL + 'images/android.png'} alt=''/>
+          <img src={baseURL + 'images/android.png'} alt='' id='ios-app-footer'/>
         </a>
       </div>
     </div>
