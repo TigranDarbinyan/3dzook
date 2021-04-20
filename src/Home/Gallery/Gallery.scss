@@ -91,6 +91,32 @@
     border-radius: 5px;
   }
 
+  .gallery-item {
+    position: relative;
+
+    .info {
+      width: 100%;
+      height: 32px;
+      bottom: 0;
+      justify-content: space-between;
+      background: #08080891;
+      position: absolute;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      display: none;
+
+      @media screen and (max-width: $mobile) {
+        display: flex;
+      }
+
+      p {
+        line-height: 1px;
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+
   @keyframes fadeIn {
     0% {
       opacity:0

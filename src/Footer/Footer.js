@@ -27,10 +27,10 @@ function Footer() {
           <a href='https://www.facebook.com/dzookapp' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'svg/fb.svg'} alt=''/>
           </a>
-          <a href='https://www.linkedin.com/company/3-dzook/' target='_blank' rel='noreferrer'>
+          <a href='https://twitter.com/3_dzook' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'svg/twitter.svg'} alt=''/>
           </a>
-          <a href='https://twitter.com/3_dzook' target='_blank' rel='noreferrer'>
+          <a href='https://www.linkedin.com/company/3-dzook/' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'svg/linkedin.svg'} alt=''/>
           </a>
           <a href='https://www.youtube.com/channel/UCQzecEFTE6N4F34IoNIHd0w' target='_blank' rel='noreferrer'>
