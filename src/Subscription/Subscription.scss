@@ -1,0 +1,27 @@
+.subscription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  color: white;
+  font-size: 14px;
+
+  .subscription-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-width: 960px;
+    color: black;
+    margin-top: 15px;
+    margin-bottom: 35px;
+    cursor: default;
+
+    .title {
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
+
+  a { color: inherit; }
+}

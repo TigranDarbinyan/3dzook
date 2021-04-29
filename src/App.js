@@ -6,6 +6,7 @@ import Media from "./Media/Media"
 import Policy from "./Policy/Policy"
 import Contacts from "./Contacts/Contacts"
 import TermsOfUse from "./TermsOfUse/TermsOfUse"
+import Subscription from "./Subscription/Subscription"
 
 function App() {
   console.log('V 1.1');
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/terms-of-use">
           <TermsOfUse/>
+        </Route>
+        <Route path="/subscription">
+          <Subscription/>
         </Route>
         <Route path="/media">
           <Media/>
