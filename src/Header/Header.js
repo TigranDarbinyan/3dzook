@@ -15,6 +15,9 @@ function Header() {
       <Link className='subscription-button' to='/subscription' onClick={() => setShowMobileMenu(false)}>Subscription</Link>
       <Link className='contacts-button' to='/contacts' onClick={() => setShowMobileMenu(false)}>Contact Us</Link>
       <div className='social-icons'>
+        <a href='https://lens.snapchat.com/537cf0c17c1b49c8abc2788fd0c04d30' target='_blank' rel='noreferrer'>
+          <img src={baseURL + 'snap.svg'} alt=''/>
+        </a>
         <a href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/instagram.svg'} alt=''/>
         </a>
@@ -57,14 +60,17 @@ function Header() {
         {getMobileMenuIcon()}
         <Link className='about-button' to='/about'>About Us</Link>
         <div className='social-icons'>
+          <a href='https://lens.snapchat.com/537cf0c17c1b49c8abc2788fd0c04d30' target='_blank' rel='noreferrer'>
+            <img src={baseURL + 'snap.svg'} alt=''/>
+          </a>
           <a href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'instagram.svg'} alt=''/>
           </a>
-          <a href='https://www.fb.com/dzookapp' target='_blank' rel='noreferrer'>
-            <img src={baseURL + 'fb.svg'} alt=''/>
-          </a>
           <a href='https://www.tiktok.com/@dzook' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'tiktok.svg'} alt=''/>
+          </a>
+          <a href='https://www.fb.com/dzookapp' target='_blank' rel='noreferrer'>
+            <img src={baseURL + 'fb.svg'} alt=''/>
           </a>
         </div>
       </div>

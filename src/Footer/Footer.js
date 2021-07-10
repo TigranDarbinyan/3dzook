@@ -37,6 +37,9 @@ function Footer() {
           <a href='https://www.youtube.com/channel/UCQzecEFTE6N4F34IoNIHd0w' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'svg/youtube.svg'} alt=''/>
           </a>
+          <a href='https://lens.snapchat.com/537cf0c17c1b49c8abc2788fd0c04d30' target='_blank' rel='noreferrer'>
+            <img src={baseURL + 'svg/snap.svg'} alt=''/>
+          </a>
         </div>
       </div>
       <div className='mobile-apps'>

@@ -4,6 +4,7 @@ import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 
 function Media() {
+  const svgURL = process.env.PUBLIC_URL + './assets/svg/';
   const imageURL = process.env.PUBLIC_URL + '/assets/images/';
   const mediaData = [
     {
@@ -55,6 +56,9 @@ function Media() {
       <div className='partners'>
         <img src={imageURL + 'eu4.png'} alt=''/>
         <img src={imageURL + 'giz.png'} alt=''/>
+        <a className='partner-snap' href='https://lens.snapchat.com/537cf0c17c1b49c8abc2788fd0c04d30' target='_blank' rel='noreferrer'>
+          <img src={svgURL + 'snap_partner.svg'} alt=''/>
+        </a>
       </div>
     </div>
     <Footer/>

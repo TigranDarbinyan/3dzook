@@ -9,6 +9,9 @@ function Home() {
 
   const getAboutBlock = () => {
     return <div className='about-3dzook'>
+      <a className='snap-partner' href='https://lens.snapchat.com/537cf0c17c1b49c8abc2788fd0c04d30' target='_blank' rel='noreferrer'>
+        <img className='snap-partner-svg' src={baseURL + 'svg/snap_partner.svg'} alt=''/>
+      </a>
       <p>Create artistic <br/> version of yourself!</p>
       <div className='one-click'>One click artworks</div>
       <img className='heart' src={baseURL + 'images/heart.png'} alt=''/>
