@@ -7,6 +7,12 @@
   color: white;
   font-size: 14px;
 
+  figure {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
   .about-container {
     display: flex;
     flex-direction: column;
@@ -16,6 +22,7 @@
     margin-top: 15px;
     margin-bottom: 35px;
     cursor: default;
+    min-height: 60vh;
 
     .title {
       font-weight: bold;

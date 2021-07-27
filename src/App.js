@@ -1,4 +1,4 @@
-import React from "react"
+import React, {useEffect, useState} from "react"
 import {BrowserRouter as Router, Switch, Route} from "react-router-dom"
 import Home from "./Home/Home"
 import About from "./About/About"
@@ -7,9 +7,35 @@ import Policy from "./Policy/Policy"
 import Contacts from "./Contacts/Contacts"
 import TermsOfUse from "./TermsOfUse/TermsOfUse"
 import Subscription from "./Subscription/Subscription"
+import {SETTINGS_LIST, SETTINGS_LIST_EVENT} from "./Services/RequestData";
+import RequestManager from "./Services/RequestManager";
 
 function App() {
-  console.log('V 1.1');
+  const [webSetting, setWebSettings] = useState([]);
+
+  useEffect(() => {
+    sendSettingsRequest();
+  }, []);
+
+  const sendSettingsRequest = () => {
+    window.addEventListener(SETTINGS_LIST_EVENT, data => initSettingsList(data['detail']), {once: true});
+    RequestManager.getInstance().sendRequest(SETTINGS_LIST, 'GET', '/settings', {});
+  }
+
+  const initSettingsList = response => {
+    const settingsList = response['data'];
+    const data = [];
+
+    if (settingsList) {
+      Object.keys(settingsList).map(key => {
+        if (key !== 'report_texts' && key !== 'text_settings_key') {
+          data.push({title: key, content: settingsList[key]});
+        }
+      })
+    }
+
+    setWebSettings([...data]);
+  }
 
   return <Router>
     <div className='app'>
@@ -18,10 +44,10 @@ function App() {
           <Home/>
         </Route>
         <Route path="/about">
-          <About/>
+          <About data={webSetting.filter(item => item.title === "page_content_about_us")}/>
         </Route>
         <Route path="/terms-of-use">
-          <TermsOfUse/>
+          <TermsOfUse data={webSetting.filter(item => item.title === "page_content_terms_of_use")}/>
         </Route>
         <Route path="/subscription">
           <Subscription/>

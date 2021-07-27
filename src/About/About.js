@@ -2,13 +2,23 @@ import './About.scss'
 import React from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
+import DOMPurify from "dompurify";
 
-function About() {
+function About({data}) {
   const imageURL = process.env.PUBLIC_URL + '/assets/images/team.png';
+  const pageHTMLContent = data && data[0] ? data[0].content : '';
+  const safeHTML = DOMPurify.sanitize(pageHTMLContent);
+
+  const getContent = () => {
+    return <div className='about-container'>
+      <div dangerouslySetInnerHTML={{ __html: safeHTML }} />
+    </div>
+  }
 
   return <div className="about">
     <Header/>
-    <div className='about-container'>
+    {getContent()}
+    {/*<div className='about-container'>
       <p className='title'>About Us</p>
       <p>
         Dzook is where the magic happens! Try mixing art with technology and you will get an amazing result. This is what we did while creating dzook.
@@ -33,7 +43,7 @@ function About() {
       <p><b>Start with the user:</b> Our users are our top priority. Every day we’re hyper-focused on improving our product to make them love it even more. We put ourselves in our users’ shoes and try to make their experience better.</p>
 
       <p><b>Deliver outstanding results:</b> Our goal is to create something great by fostering innovation and team collaboration, a product that will show how great the mix of art and technology can be.</p>
-    </div>
+    </div>*/}
     <Footer/>
   </div>
 }

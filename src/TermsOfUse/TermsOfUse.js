@@ -2,11 +2,21 @@ import './TermsOfUse.scss'
 import React from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
+import DOMPurify from "dompurify";
 
-function TermsOfUse() {
+function TermsOfUse({data}) {
+  const pageHTMLContent = data && data[0] ? data[0].content : '';
+  const safeHTML = DOMPurify.sanitize(pageHTMLContent);
+
+  const getContent = () => {
+    return <div className='terms-of-use-container'>
+      <div dangerouslySetInnerHTML={{ __html: safeHTML }} />
+    </div>
+  }
 
   return <div className="terms-of-use">
     <Header/>
+    {/*{getContent()}*/}
     <div className='terms-of-use-container'>
       <p className='title'>Terms of Use Agreement</p> <br/> <br/>
 
