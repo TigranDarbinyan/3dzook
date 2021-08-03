@@ -17,8 +17,8 @@ function About({data}) {
 
   return <div className="about">
     <Header/>
-    {getContent()}
-    {/*<div className='about-container'>
+    {/*{getContent()}*/}
+    <div className='about-container'>
       <p className='title'>About Us</p>
       <p>
         Dzook is where the magic happens! Try mixing art with technology and you will get an amazing result. This is what we did while creating dzook.
@@ -43,7 +43,7 @@ function About({data}) {
       <p><b>Start with the user:</b> Our users are our top priority. Every day we’re hyper-focused on improving our product to make them love it even more. We put ourselves in our users’ shoes and try to make their experience better.</p>
 
       <p><b>Deliver outstanding results:</b> Our goal is to create something great by fostering innovation and team collaboration, a product that will show how great the mix of art and technology can be.</p>
-    </div>*/}
+    </div>
     <Footer/>
   </div>
 }

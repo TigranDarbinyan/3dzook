@@ -15,25 +15,25 @@ function Header() {
       <Link className='subscription-button' to='/subscription' onClick={() => setShowMobileMenu(false)}>Subscription</Link>
       <Link className='contacts-button' to='/contacts' onClick={() => setShowMobileMenu(false)}>Contact Us</Link>
       <div className='social-icons'>
-        <a href='https://lens.snapchat.com/537cf0c17c1b49c8abc2788fd0c04d30' target='_blank' rel='noreferrer'>
+        <a className='snap-icon' href='https://lens.snapchat.com/537cf0c17c1b49c8abc2788fd0c04d30' target='_blank' rel='noreferrer'>
           <img src={baseURL + 'snap.svg'} alt=''/>
         </a>
-        <a href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>
+        <a className='insta-icon' href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/instagram.svg'} alt=''/>
         </a>
-        <a href='https://www.tiktok.com/@dzook' target='_blank' rel='noreferrer'>
+        <a className='tiktok-icon' href='https://www.tiktok.com/@dzook' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/tiktok.svg'} alt=''/>
         </a>
-        <a href='https://www.facebook.com/dzookapp' target='_blank' rel='noreferrer'>
+        <a className='fb-icon' href='https://www.facebook.com/dzookapp' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/fb.svg'} alt=''/>
         </a>
-        <a href='https://twitter.com/3_dzook' target='_blank' rel='noreferrer'>
+        <a className='tw-icon' href='https://twitter.com/3_dzook' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/twitter.svg'} alt=''/>
         </a>
-        <a href='https://www.linkedin.com/company/3-dzook/' target='_blank' rel='noreferrer'>
+        <a className='ln-icon' href='https://www.linkedin.com/company/3-dzook/' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/linkedin.svg'} alt=''/>
         </a>
-        <a href='https://www.youtube.com/channel/UCQzecEFTE6N4F34IoNIHd0w' target='_blank' rel='noreferrer'>
+        <a className='you-icon' href='https://www.youtube.com/channel/UCQzecEFTE6N4F34IoNIHd0w' target='_blank' rel='noreferrer'>
           <img src={baseURL + '/youtube.svg'} alt=''/>
         </a>
       </div>
@@ -60,16 +60,16 @@ function Header() {
         {getMobileMenuIcon()}
         <Link className='about-button' to='/about'>About Us</Link>
         <div className='social-icons'>
-          <a href='https://lens.snapchat.com/537cf0c17c1b49c8abc2788fd0c04d30' target='_blank' rel='noreferrer'>
+          <a className='snap-icon' href='https://lens.snapchat.com/537cf0c17c1b49c8abc2788fd0c04d30' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'snap.svg'} alt=''/>
           </a>
-          <a href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>
+          <a className='insta-icon' href='https://www.instagram.com/dzook_app/' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'instagram.svg'} alt=''/>
           </a>
-          <a href='https://www.tiktok.com/@dzook' target='_blank' rel='noreferrer'>
+          <a className='tiktok-icon' href='https://www.tiktok.com/@dzook' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'tiktok.svg'} alt=''/>
           </a>
-          <a href='https://www.fb.com/dzookapp' target='_blank' rel='noreferrer'>
+          <a className='fb-icon' href='https://www.fb.com/dzookapp' target='_blank' rel='noreferrer'>
             <img src={baseURL + 'fb.svg'} alt=''/>
           </a>
         </div>
