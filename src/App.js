@@ -50,13 +50,13 @@ function App() {
           <TermsOfUse data={webSetting.filter(item => item.title === "page_content_terms_of_use")}/>
         </Route>
         <Route path="/subscription">
-          <Subscription/>
+          <Subscription data={webSetting.filter(item => item.title === "page_content_subscription")}/>
         </Route>
         <Route path="/media">
-          <Media/>
+          <Media data={webSetting.filter(item => item.title === "page_content_about_media")}/>
         </Route>
         <Route path="/policy">
-          <Policy/>
+          <Policy data={webSetting.filter(item => item.title === "page_content_privacy_policy")}/>
         </Route>
         <Route path="/contacts">
           <Contacts/>

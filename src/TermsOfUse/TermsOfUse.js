@@ -16,8 +16,8 @@ function TermsOfUse({data}) {
 
   return <div className="terms-of-use">
     <Header/>
-    {/*{getContent()}*/}
-    <div className='terms-of-use-container'>
+    {getContent()}
+    {/*<div className='terms-of-use-container'>
       <p className='title'>Terms of Use Agreement</p> <br/> <br/>
 
       These Terms of Use Agreement (“Agreement”) apply to your access and use of this website, or the applications and other online products and services (collectively, our “Services”) provided by 3dzook Inc (“dzook” or “we”). <br/> <br/>
@@ -132,7 +132,7 @@ function TermsOfUse({data}) {
         <br/> <br/>
       <b>17. Dispute Resolution </b> <br/>
       In the event a dispute cannot be resolved through communications with dzook, you and we agree that any dispute, claim, or controversy arising out of or relating to the Terms, Privacy Policy, or Additional Terms, or your use of the dzook Services, shall be resolved through final and binding arbitration administered by the American Arbitration Association (“AAA”) under its Commercial Arbitration Rules.
-    </div>
+    </div>*/}
     <Footer/>
   </div>
 }

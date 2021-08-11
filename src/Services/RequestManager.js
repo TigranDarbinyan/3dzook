@@ -39,7 +39,7 @@ import {
 const IS_TEST_ENV = window.location.href.indexOf('test') !== -1;
 const DEV_MODE = process.env.NODE_ENV === 'development';
 
-export const API_URL = IS_TEST_ENV || DEV_MODE ? 'http://test.dzook.ai/api' : 'https://app.dzook.ai/api';
+export const API_URL = IS_TEST_ENV /*|| DEV_MODE*/ ? 'http://test.dzook.ai/api' : 'https://app.dzook.ai/api';
 
 export default class RequestManager {
   static instance = null;
