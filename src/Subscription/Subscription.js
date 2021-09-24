@@ -3,12 +3,22 @@ import React from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
 import { HashLink as Link } from 'react-router-hash-link'
+import DOMPurify from "dompurify";
 
-function Subscription() {
+function Subscription({data}) {
+  const pageHTMLContent = data && data[0] ? data[0].content : '';
+  const safeHTML = DOMPurify.sanitize(pageHTMLContent);
+
+  const getContent = () => {
+    return <div className='subscription-container'>
+      <div dangerouslySetInnerHTML={{ __html: safeHTML }} />
+    </div>
+  }
 
   return <div className="subscription">
     <Header/>
-    <div className='subscription-container'>
+    {getContent()}
+    {/*<div className='subscription-container'>
       <p className='title'>About Subscription</p> <br/>
       <div>
         <b><Link to="/subscription#policies">1. Subscription Policies</Link></b> <br/>
@@ -121,7 +131,7 @@ function Subscription() {
         If you subscribed to dzook PRO through Google Play, you should receive an order receipt to your email address sent by the store you purchased from.
 
       </div>
-    </div>
+    </div>*/}
     <Footer/>
   </div>
 }

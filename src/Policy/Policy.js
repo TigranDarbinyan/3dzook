@@ -2,12 +2,23 @@ import './Policy.scss'
 import React from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
+import DOMPurify from "dompurify";
 
-function Policy() {
+function Policy({data}) {
+  const pageHTMLContent = data && data[0] ? data[0].content : '';
+  const safeHTML = DOMPurify.sanitize(pageHTMLContent);
+
+  const getContent = () => {
+    return <div className='policy-container'>
+      <div dangerouslySetInnerHTML={{ __html: safeHTML }} />
+    </div>
+  }
+
   return <div className="policy">
     <Header/>
     <div className='policy-container'>
-      <p className='title'>PRIVACY POLICY</p>
+      {getContent()}
+      {/*<p className='title'>PRIVACY POLICY</p>
       <p className="content">
         Effective as of  11.11.2020
         <br/><br/>
@@ -122,7 +133,7 @@ function Policy() {
         </ul> <br/>
         <b>How to Submit a Request</b><br/> <br/>
         To request access to or deletion of personal information please email us at privacy@dzook.ai.
-      </p>
+      </p>*/}
     </div>
     <Footer/>
   </div>

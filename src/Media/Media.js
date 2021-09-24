@@ -2,8 +2,18 @@ import './Media.scss'
 import React from "react"
 import Header from "../Header/Header"
 import Footer from "../Footer/Footer"
+import DOMPurify from "dompurify";
 
-function Media() {
+function Media({data}) {
+  const pageHTMLContent = data && data[0] ? data[0].content : '';
+  const safeHTML = DOMPurify.sanitize(pageHTMLContent);
+
+  const getContent = () => {
+    return <div className='media-item-content-container'>
+      <div dangerouslySetInnerHTML={{ __html: safeHTML }} />
+    </div>
+  }
+
   const svgURL = process.env.PUBLIC_URL + './assets/svg/';
   const imageURL = process.env.PUBLIC_URL + '/assets/images/';
   const mediaData = [
