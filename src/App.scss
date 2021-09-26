@@ -1,5 +1,11 @@
 .app {
   display: flex;
+}
 
-
+.website-loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+  cursor: default;
 }

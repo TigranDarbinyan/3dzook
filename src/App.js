@@ -9,9 +9,11 @@ import TermsOfUse from "./TermsOfUse/TermsOfUse"
 import Subscription from "./Subscription/Subscription"
 import {SETTINGS_LIST, SETTINGS_LIST_EVENT} from "./Services/RequestData";
 import RequestManager from "./Services/RequestManager";
+import './App.scss'
 
 function App() {
   const [webSetting, setWebSettings] = useState([]);
+  const [dataLoaded, setDataLoaded] = useState(false);
 
   useEffect(() => {
     sendSettingsRequest();
@@ -35,35 +37,38 @@ function App() {
     }
 
     setWebSettings([...data]);
+    setDataLoaded(true);
   }
 
-  return <Router>
-    <div className='app'>
-      <Switch>
-        <Route exact path="/">
-          <Home/>
-        </Route>
-        <Route path="/about">
-          <About data={webSetting.filter(item => item.title === "page_content_about_us")}/>
-        </Route>
-        <Route path="/terms-of-use">
-          <TermsOfUse data={webSetting.filter(item => item.title === "page_content_terms_of_use")}/>
-        </Route>
-        <Route path="/subscription">
-          <Subscription data={webSetting.filter(item => item.title === "page_content_subscription")}/>
-        </Route>
-        <Route path="/media">
-          <Media data={webSetting.filter(item => item.title === "page_content_about_media")}/>
-        </Route>
-        <Route path="/policy">
-          <Policy data={webSetting.filter(item => item.title === "page_content_privacy_policy")}/>
-        </Route>
-        <Route path="/contacts">
-          <Contacts/>
-        </Route>
-      </Switch>
-    </div>
-  </Router>
+  return dataLoaded
+    ? <Router>
+      <div className='app'>
+        <Switch>
+          <Route exact path="/">
+            <Home/>
+          </Route>
+          <Route path="/about">
+            <About data={webSetting.filter(item => item.title === "page_content_about_us")}/>
+          </Route>
+          <Route path="/terms-of-use">
+            <TermsOfUse data={webSetting.filter(item => item.title === "page_content_terms_of_use")}/>
+          </Route>
+          <Route path="/subscription">
+            <Subscription data={webSetting.filter(item => item.title === "page_content_subscription")}/>
+          </Route>
+          <Route path="/media">
+            <Media data={webSetting.filter(item => item.title === "page_content_about_media")}/>
+          </Route>
+          <Route path="/policy">
+            <Policy data={webSetting.filter(item => item.title === "page_content_privacy_policy")}/>
+          </Route>
+          <Route path="/contacts">
+            <Contacts/>
+          </Route>
+        </Switch>
+      </div>
+    </Router>
+    : <div className='website-loader'>Loading...</div>
 }
 
 export default App;
