@@ -17,8 +17,8 @@ function Subscription({data}) {
 
   return <div className="subscription">
     <Header/>
-    {getContent()}
-    {/*<div className='subscription-container'>
+    {/*{getContent()}*/}
+    <div className='subscription-container'>
       <p className='title'>About Subscription</p> <br/>
       <div>
         <b><Link to="/subscription#policies">1. Subscription Policies</Link></b> <br/>
@@ -131,7 +131,7 @@ function Subscription({data}) {
         If you subscribed to dzook PRO through Google Play, you should receive an order receipt to your email address sent by the store you purchased from.
 
       </div>
-    </div>*/}
+    </div>
     <Footer/>
   </div>
 }

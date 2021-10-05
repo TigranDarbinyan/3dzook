@@ -40,8 +40,7 @@ function App() {
     setDataLoaded(true);
   }
 
-  return dataLoaded
-    ? <Router>
+  return <Router>
       <div className='app'>
         <Switch>
           <Route exact path="/">
@@ -68,7 +67,6 @@ function App() {
         </Switch>
       </div>
     </Router>
-    : <div className='website-loader'>Loading...</div>
 }
 
 export default App;
