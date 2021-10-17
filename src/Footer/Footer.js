@@ -15,6 +15,7 @@ function Footer() {
           <Link className='media-button' to='/media' onClick={toTop}>Media</Link>
           <Link className='policy-button' to='/policy' onClick={toTop}>Privacy Policy</Link>
           <Link className='terms-of-use-button' to='/terms-of-use' onClick={toTop}>Terms of Use</Link>
+          <Link className='eula-button' to='/EULA' onClick={toTop}>EULA</Link>
           <Link className='subscription-button' to='/subscription' onClick={toTop}>Subscription</Link>
           <Link className='contacts-button' to='/contacts' onClick={toTop}>Contact Us</Link>
         </div>

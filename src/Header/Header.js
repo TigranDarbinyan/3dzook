@@ -11,6 +11,7 @@ function Header() {
       <Link className='about-button' to='/about' onClick={() => setShowMobileMenu(false)}>About Us</Link>
       <Link className='media-button' to='/media' onClick={() => setShowMobileMenu(false)}>Media</Link>
       <Link className='policy-button' to='/policy' onClick={() => setShowMobileMenu(false)}>Privacy Policy</Link>
+      <Link className='eula-button' to='/EULA' onClick={() => setShowMobileMenu(false)}>EULA</Link>
       <Link className='terms-of-use-button' to='/terms-of-use' onClick={() => setShowMobileMenu(false)}>Terms of Use</Link>
       <Link className='subscription-button' to='/subscription' onClick={() => setShowMobileMenu(false)}>Subscription</Link>
       <Link className='contacts-button' to='/contacts' onClick={() => setShowMobileMenu(false)}>Contact Us</Link>

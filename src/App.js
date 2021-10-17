@@ -10,6 +10,7 @@ import Subscription from "./Subscription/Subscription"
 import {SETTINGS_LIST, SETTINGS_LIST_EVENT} from "./Services/RequestData";
 import RequestManager from "./Services/RequestManager";
 import './App.scss'
+import EULA from "./EULA/EULA";
 
 function App() {
   const [webSetting, setWebSettings] = useState([]);
@@ -60,6 +61,9 @@ function App() {
           </Route>
           <Route path="/policy">
             <Policy data={webSetting.filter(item => item.title === "page_content_privacy_policy")}/>
+          </Route>
+          <Route path="/EULA">
+            <EULA/>
           </Route>
           <Route path="/contacts">
             <Contacts/>
